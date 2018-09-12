@@ -1,19 +1,55 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './style/tabs.css';
+import { Route } from "react-router-dom";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'; 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <main className="rootBox">
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <div role="group">
+              <aside
+                className="menuNav">
+
+              </aside>
+              <aside
+                className="tabNav">
+              </aside>
+              <header>
+                <h1 className="title-like">Setup</h1>
+              </header>
+              <nav>
+                <Tabs>
+                  <TabList>
+                    <Tab>MINHA EQUIPE</Tab>
+                    <Tab>TAB ITEM</Tab>
+                    <Tab>TAB ITEM</Tab>
+                    <Tab>TAB ITEM</Tab>
+                    <Tab>TAB ITEM</Tab>
+                  </TabList>
+
+                  <TabPanel>
+                  </TabPanel>
+                  <TabPanel>
+                  </TabPanel>
+                  <TabPanel>
+                  </TabPanel>
+                  <TabPanel>
+                  </TabPanel>
+                  <TabPanel>
+                  </TabPanel>
+                </Tabs>
+              </nav>
+            </div>
+          )}
+        />
+      </main>
     );
   }
 }
