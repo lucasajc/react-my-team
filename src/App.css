@@ -1,32 +1,63 @@
 body{
   background-color: rgb(240,241,243,147);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
   position: absolute;
   margin-left: 7.5%;
+  width:90%;
+  z-index: 5
 }
 
-nav{
+h2, .drop-down-like{
+  color: rgb(172,177,180,135);
+  font-size: 12px;
+  padding-left: 2em;
+  padding-top: 1em;
+  display: inline-block;
+}
+
+h3{
+  color: rgb(178,181,182,130);
+  font-size: 11px;
+}
+
+.panelContainer{
   position: absolute;
   margin-left: 7.5%;
-  margin-top: 5em;
-  width:89.5%;
+  margin-top: 4em;
+  width:91%;
+  height:85%;
 }
 
 h1, .title-like{
   color: rgb(106,125,140,138);
   font-size: 16px;
   padding-left: 2em;
-  padding-top: 1.5em;
+  padding-top: 1em;
+  display: inline-block;
+}
+
+.menu-drop-down{
+  float:right;
+  display: inline-block;
+}
+
+.drop-down-icon{
+  color: rgb(172,177,180,135);
+  padding-left: 0.5em;
 }
 
 .tabPanelContainer{
   background-color: rgb(244,245,247,147);
-  width:100%;
+  width:101.5%;
   height:100%;
+  margin-top:2em;
   position: absolute;
+  z-index: -1;
 }
+
 
 .rootBox{
   width:100%;
@@ -39,6 +70,102 @@ h1, .title-like{
   height:100%;
   position: absolute;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.list-names-wrapper {
+  margin-left: 1.5em;
+  margin-top: 0.75em;
+  color: rgb(141,163,171,70);
+  font-size: 12px;
+}
+
+.search-names-input-wrapper{
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(222,223,225,131);
+  width:45%;
+  padding:0.25em;
+  display: inline-block;
+}
+
+.search-icon{
+  height:1em;
+  margin-left: 0.25em;
+}
+
+.search-names-input{
+  width:90%;
+  margin-left:1em;
+  height:2em;
+  background: rgb(244,245,247,147);
+  border-color: #aaa;
+  border-style: none;
+ }
+
+ .manage-users-wrapper{
+  display: inline-block;
+  float:right;
+ }
+
+ .button-user-off {
+    background-color: white;
+    font-size: 11px;
+    color: rgb(182,198,200,124);
+    padding-top:0.75em;
+    padding-bottom:0.75em;
+    padding-left: 2em;
+    padding-right:2em;
+    border: 1px solid rgb(231,232,234,147);
+    display: inline-block;
+    border-radius: 3px 0px 0px 3px;
+    margin-left: 2em;
+}
+
+.button-user-on {
+   background-color: rgb(238,241,242,130);
+    font-size: 11px;
+    color: rgb(141,156,162,131);
+    padding-top:0.75em;
+    padding-bottom:0.75em;
+    padding-left: 2em;
+    padding-right:2em;
+    border: 1px solid rgb(231,232,234,147);
+    display: inline-block;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.button-user-add {
+   background-color: rgb(135,193,109,68);
+    font-size: 11px;
+    color: white;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left: 2em;
+    padding-right:2em;
+    border: 1px solid rgb(231,232,234,147);
+    display: inline-block;
+    border-radius: 3px 3px 3px 3px;
+    margin-left: 2em;
+}
+
+.menu-item-container{
+  margin-top: 2em;
+  text-align: center;
+}
+
+.active-menu-item-container{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.menu-icon{
+  color: rgb(172,177,180,135);
+}
+
+.active-menu-icon{
+  font-size: 2.5em;
+  color: rgb(139,144,148,138);
 }
 
 .App {
