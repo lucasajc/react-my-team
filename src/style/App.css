@@ -78,9 +78,9 @@ body{
 }
  .my-team-wrapper {
      margin-left: 2em;
-     margin-top: 0.75em;
+     margin-top: 2em;
      color: rgb(141,163,171,70);
-     font-size: 12px;
+     font-size: 11px;
 }
  .search-names-input-wrapper{
      border-bottom-style: solid;
@@ -172,9 +172,10 @@ body{
      color: rgb(139,144,148,138);
 }
  .list-users-wrapper{
-     width: 102%;
+     width: 103%;
      display:block;
      margin-left:-2em;
+     margin-top:1em;
 }
  .member-container{
      width:21.3em;
