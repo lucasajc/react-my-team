@@ -50,9 +50,6 @@ class App extends Component {
     this.setState({
       selectedMember: this.state.selectedMembers.find(item => item.id == memberId)
     });
-    console.log(this.state.selectedMembers);
-    console.log(this.state.members);
-    console.log(this.state.selectedMember);
     this.showUserForm();
   }
 

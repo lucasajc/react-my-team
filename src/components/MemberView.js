@@ -24,7 +24,6 @@ class MemberView extends Component {
    * @param {Object} event - the onclick event
    */
   handleUserEdit = event => {
-    console.log(event.target.value);
     if (this.props.editUser) this.props.editUser(event.target.value);
   }
 
