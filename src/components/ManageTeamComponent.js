@@ -3,10 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../style/App.css";
 import MemberView from "./MemberView";
-
 import PropTypes from "prop-types";
 
+/**
+ * @description renders the ManageTeamComponent component
+ */
 class ManageTeamComponent extends Component {
+
+  static propTypes = {
+    members: PropTypes.array.isRequired
+  };
+
+  /**
+   * @description defines the state and binds with the methods
+   */
   constructor() {
     super();
     this.state = {
@@ -19,29 +29,27 @@ class ManageTeamComponent extends Component {
     this.handleSearch = this.handleSearch.bind(this);
   }
 
-  static propTypes = {
-    members: PropTypes.array.isRequired
-  };
-
   /**
    * @description send query to filter members
    */
 
-  handleSearch(event) {
-    console.log(this.state.query);
+  handleSearch = event => {
     this.props.onSearch(this.state.query);
     event.preventDefault();
   }
 
   /**
    * @description writes the query to filter members
-   * @param {e} object - The onchange event
+   * @param {Object} event - The onchange event
    */
-
   handleSearchChange = event => {
     this.setState({ query: event.target.value });
   };
 
+  /**
+   * @description change the users view button
+   * @param {Object} event - The onclick event
+   */
   toggleUserButton = event => {
     if (
       event.target.value === "freelas" &&
@@ -61,10 +69,17 @@ class ManageTeamComponent extends Component {
     event.preventDefault();
   };
 
+  /**
+   * @description call method that changes perspective to the registration form
+   */
   openUserForm() {
     if (this.props.showUserForm) this.props.showUserForm();
   }
 
+  /**
+   * @description renders the component
+   * @returns jsx containing the component/routes
+   */
   render() {
     const { members } = this.props;
     return (

@@ -5,8 +5,15 @@ import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import "../style/App.css";
 import { Link } from "react-router-dom";
 
+/**
+ * @description renders the MenuComponent component
+ */
 class MenuComponent extends Component {
 
+  /**
+   * @description renders the component
+   * @returns jsx containing the component/routes
+   */
   render() {
     const { title } = this.props;
 

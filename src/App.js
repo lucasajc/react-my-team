@@ -8,7 +8,14 @@ import ManageTeamComponent from "./components/ManageTeamComponent";
 import ManageUserComponent from "./components/ManageUserComponent";
 import MenuComponent from "./components/MenuComponent";
 
+/**
+ * @description renders the main component
+ */
 class App extends Component {
+
+  /**
+   * @description defines the state and binds with the methods
+   */
   constructor(props) {
     super(props);
     this.state = {
@@ -35,13 +42,26 @@ class App extends Component {
     });
   }
 
+  /**
+   * @description selects the clicked user and opens the screen that performs its editing
+   * @param {Integer} memberId - the required member id
+   */
   editUser(memberId) {
     this.setState({
-      selectedMember: this.state.members.find(item => item.id === memberId)
+      selectedMember: this.state.selectedMembers.find(item => item.id == memberId)
     });
+    console.log(this.state.selectedMembers);
+    console.log(this.state.members);
+    console.log(this.state.selectedMember);
     this.showUserForm();
   }
 
+  /**
+   * @description create a new user or edit an existing user
+   * @param {String} name - the required member name
+   * @param {String} email - the required member email
+   * @param {Object} memberSelected - the required member selected for editing
+   */
   onSubmitUser(name, email, memberSelected) {
     if (name !== "") {
       if (this.isEmail(email)) {
@@ -78,6 +98,9 @@ class App extends Component {
     }
   }
 
+  /**
+   * @description hides the user editing form
+   */
   hideUserForm() {
     if (this.state.mainPageStyle === "transparent") {
       this.setState({
@@ -87,12 +110,19 @@ class App extends Component {
     }
   }
 
+  /**
+   * @description shows the user editing form
+   */
   showUserForm() {
     this.setState({
       mainPageStyle: "transparent"
     });
   }
 
+  /**
+   * @description performs search and filtering of user according to a text entry
+   * @param {String} query - the required text entry
+   */
   onSearch(query) {
     this.setState({
       selectedMembers: this.state.members.filter(
@@ -101,11 +131,20 @@ class App extends Component {
     });
   }
 
+  /**
+   * @description checks whether the selected email is in the default format
+   * @param {String} email - the required email text
+   * @returns {Boolean} the test result
+   */
   isEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
 
+  /**
+   * @description renders the component
+   * @returns jsx containing the component/routes
+   */
   render() {
     return (
       <main className="rootBox">
