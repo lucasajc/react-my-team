@@ -1,315 +1,243 @@
 body{
-  background-color: rgb(240,241,243,147);
-  font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(240,241,243,147);
+     font-family: Arial, Helvetica, sans-serif;
 }
-
-a {text-decoration: none;}
-
-.page-header{
-  position: absolute;
-  margin-left: 7.5%;
-  width:90%;
-  z-index: 5
+ a {
+    text-decoration: none;
 }
-
-.my-team-options{
-  width:100%;
+ .page-header{
+     position: absolute;
+     margin-left: 7.5%;
+     width:90%;
+     z-index: 5 
 }
-
-h2, .drop-down-like{
-  color: rgb(172,177,180,135);
-  font-size: 12px;
-  padding-left: 2em;
-  padding-top: 1em;
-  display: inline-block;
+ .my-team-options{
+     width:100%;
 }
-
-h3{
-  color: rgb(155,157,156,100);
-  font-size: 13px;
+ h2, .drop-down-like{
+     color: rgb(172,177,180,135);
+     font-size: 12px;
+     padding-left: 2em;
+     padding-top: 1em;
+     display: inline-block;
 }
-
-h4{
-  color: rgb(178,181,182,130);
-  font-size: 11px;
+ h3{
+     color: rgb(155,157,156,100);
+     font-size: 13px;
 }
-
-p{
-  color: rgb(176,186,188,127);
-  font-size: 11px;
-  font-style: normal;
+ h4{
+     color: rgb(178,181,182,130);
+     font-size: 11px;
 }
-
-.panelContainer{
-  position: absolute;
-  margin-left: 7.5%;
-  margin-top: 4em;
-  width:91%;
-  height:85%;
+ p{
+     color: rgb(176,186,188,127);
+     font-size: 11px;
+     font-style: normal;
 }
-
-h1, .title-like{
-  color: rgb(106,125,140,138);
-  font-size: 16px;
-  padding-left: 2em;
-  padding-top: 1em;
-  display: inline-block;
+ .panelContainer{
+     position: absolute;
+     margin-left: 7.5%;
+     margin-top: 4em;
+     width:91%;
+     height:85%;
 }
-
-.menu-drop-down{
-  float:right;
-  display: inline-block;
+ h1, .title-like{
+     color: rgb(106,125,140,138);
+     font-size: 16px;
+     padding-left: 2em;
+     padding-top: 1em;
+     display: inline-block;
 }
-
-.drop-down-icon{
-  color: rgb(172,177,180,135);
-  padding-left: 0.5em;
+ .menu-drop-down{
+     float:right;
+     display: inline-block;
 }
-
-.tabPanelContainer{
-  background-color: rgb(244,245,247,147);
-  width:101.5%;
-  height:100%;
-  margin-top:2em;
-  position: absolute;
-  z-index: -1;
+ .drop-down-icon{
+     color: rgb(172,177,180,135);
+     padding-left: 0.5em;
 }
-
-
-.rootBox{
-  width:100%;
-  height:100%;
+ .tabPanelContainer{
+     background-color: rgb(244,245,247,147);
+     width:101.5%;
+     height:100%;
+     margin-top:2em;
+     position: absolute;
+     z-index: -1;
 }
-
-.menuNav{
-  background-color: rgb(255,255,255,160);
-  width:7.5%;
-  height:100%;
-  position: absolute;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+ .rootBox{
+     width:100%;
+     height:100%;
 }
-
-.my-team-wrapper {
-  margin-left: 2em;
-  margin-top: 0.75em;
-  color: rgb(141,163,171,70);
-  font-size: 12px;
+ .menuNav{
+     background-color: rgb(255,255,255,160);
+     width:7.5%;
+     height:100%;
+     position: absolute;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+     z-index: 1;
 }
-
-.search-names-input-wrapper{
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: rgb(222,223,225,131);
-  width:45%;
-  padding:0.25em;
-  display: inline-block;
+ .my-team-wrapper {
+     margin-left: 2em;
+     margin-top: 0.75em;
+     color: rgb(141,163,171,70);
+     font-size: 12px;
 }
-
-.search-icon{
-  height:1em;
-  margin-left: 0.25em;
+ .search-names-input-wrapper{
+     border-bottom-style: solid;
+     border-bottom-width: 2px;
+     border-bottom-color: rgb(222,223,225,131);
+     width:45%;
+     padding:0.25em;
+     display: inline-block;
 }
-
-.search-names-input{
-  width:90%;
-  margin-left:1em;
-  height:2em;
-  background: rgb(244,245,247,147);
-  border-color: #aaa;
-  border-style: none;
- }
-
+ .search-icon{
+     height:1em;
+     margin-left: 0.25em;
+}
+ .search-names-input{
+     width:90%;
+     margin-left:1em;
+     height:2em;
+     background: rgb(244,245,247,147);
+     border-color: #aaa;
+     border-style: none;
+}
  .manage-users-wrapper{
-  display: inline-block;
-  float:right;
- }
-
+     display: inline-block;
+     float:right;
+}
  .button-user{
-    font-size: 11px;
-    color: rgb(182,198,200,124);
-    padding-top:0.75em;
-    padding-bottom:0.75em;
-    padding-left: 2em;
-    padding-right:2em;
-    border: 1px solid rgb(231,232,234,147);
-    display: inline-block;
- }
-
+     font-size: 11px;
+     color: rgb(182,198,200,124);
+     padding-top:0.75em;
+     padding-bottom:0.75em;
+     padding-left: 2em;
+     padding-right:2em;
+     border: 1px solid rgb(231,232,234,147);
+     display: inline-block;
+}
  .button-user-left{
-  margin-left: 2em;
-  border-radius: 3px 0px 0px 3px;
- }
-
+     margin-left: 2em;
+     border-radius: 3px 0px 0px 3px;
+}
  .button-user-right{
-
-  border-radius: 0px 3px 3px 0px;
-   }
-
+     border-radius: 0px 3px 3px 0px;
+}
  .button-user-off {
-    background-color: white;
+     background-color: white;
 }
-
-.button-user-on {
-   background-color: rgb(238,241,242,130);
+ .button-user-on {
+     background-color: rgb(238,241,242,130);
 }
-
-.button-user-add {
-   background-color: rgb(135,193,109,68);
-    font-size: 11px;
-    color: white;
-    padding-top:1em;
-    padding-bottom:1em;
-    padding-left: 2em;
-    padding-right:2em;
-    border: 1px solid rgb(231,232,234,147);
-    display: inline-block;
-    border-radius: 3px 3px 3px 3px;
-    margin-left: 2em;
+ .button-user-add {
+     background-color: rgb(135,193,109,68);
+     font-size: 11px;
+     color: white;
+     padding-top:1em;
+     padding-bottom:1em;
+     padding-left: 2em;
+     padding-right:2em;
+     border: 1px solid rgb(231,232,234,147);
+     display: inline-block;
+     border-radius: 3px 3px 3px 3px;
+     margin-left: 2em;
 }
-
-.button-user-create {
-   background-color: rgb(94,124,186,147);
-    font-size: 11px;
-    color: white;
-    padding-top:1em;
-    padding-bottom:1em;
-    padding-left: 2em;
-    padding-right:2em;
-    border: 1px solid rgb(231,232,234,147);
-    display: inline-block;
-    border-radius: 3px 3px 3px 3px;
-    float:right;
-    margin-top:1em;
+ .button-user-create {
+     background-color: rgb(94,124,186,147);
+     font-size: 11px;
+     color: white;
+     padding-top:1em;
+     padding-bottom:1em;
+     padding-left: 2em;
+     padding-right:2em;
+     border: 1px solid rgb(231,232,234,147);
+     display: inline-block;
+     border-radius: 3px 3px 3px 3px;
+     float:right;
+     margin-top:1em;
 }
-
-.menu-item-container{
-  margin-top: 2em;
-  text-align: center;
+ .menu-item-container{
+     margin-top: 2em;
+     text-align: center;
 }
-
-.active-menu-item-container{
-  margin-top: 1em;
-  text-align: center;
+ .active-menu-item-container{
+     margin-top: 1em;
+     text-align: center;
 }
-
-.menu-icon{
-  color: rgb(172,177,180,135);
+ .menu-icon{
+     color: rgb(172,177,180,135);
 }
-
-.active-menu-icon{
-  font-size: 2.5em;
-  color: rgb(139,144,148,138);
+ .active-menu-icon{
+     font-size: 2.5em;
+     color: rgb(139,144,148,138);
 }
-
-.list-users-wrapper{
-  width: 102%;
-  display:block;
-  margin-left:-2em;
+ .list-users-wrapper{
+     width: 102%;
+     display:block;
+     margin-left:-2em;
 }
-
-.member-container{
-  width:21.3em;
-  display: inline-block;
-  margin-left: 2em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(228,230,229,100);
-  margin-top:1em;
-  background-color: rgb(247,249,248,100);
-  text-align: center;
+ .member-container{
+     width:21.3em;
+     display: inline-block;
+     margin-left: 2em;
+     border-style: solid;
+     border-width: 1px;
+     border-color: rgb(228,230,229,100);
+     margin-top:1em;
+     background-color: rgb(247,249,248,100);
+     text-align: center;
 }
-
-.button-content{
-  pointer-events: none;
+ .button-content{
+     pointer-events: none;
 }
-
-.member-photo{
-  margin-left: 39%;
-  border-radius: 50%;
+ .member-photo{
+     margin-left: 39%;
+     border-radius: 50%;
 }
-
-.create-user-container{
-  position: absolute;
-  height:100%;
-  width:47%;
-  background-color: rgb(250,250,250,160);
-  right: 0;  
-  top: 0;
-  z-index: 10;
+ .create-user-container{
+     position: absolute;
+     height:100%;
+     width:47%;
+     background-color: rgb(250,250,250,160);
+     right: 0;
+     top: 0;
+     z-index: 10;
 }
-
-.create-user-header{
-  width:100%;
-  height:7.5%;
-  background-color: white;
-  display:table
+ .create-user-header{
+     width:100%;
+     height:7.5%;
+     background-color: white;
+     display:table 
 }
-
-.create-user-title{
-  color: rgb(155,157,156,100);
-  font-size: 15px;
-  font-weight: bold;
-  padding-left: 1em
-
+ .create-user-title{
+     color: rgb(155,157,156,100);
+     font-size: 15px;
+     font-weight: bold;
+     padding-left: 1em 
 }
-
-.create-user-form{
-  padding:1em;
+ .create-user-form{
+     padding:1em;
 }
-
-.create-user-form-input-wrapper{
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgb(222,223,225,131);
-  width:100%;
-  display: inline-block;
+ .create-user-form-input-wrapper{
+     border-bottom-style: solid;
+     border-bottom-width: 1px;
+     border-bottom-color: rgb(222,223,225,131);
+     width:100%;
+     display: inline-block;
 }
-
-.create-user-form-input{
-  width:100%;
-  height:1em;
-  background: rgb(250,250,250,160);
-  border-style: none;
- }
-
-.transparent{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  width: 100%;
-  height:100%;
-  opacity: 0.3;
-  z-index:9;
+ .create-user-form-input{
+     width:100%;
+     height:1em;
+     background: rgb(250,250,250,160);
+     border-style: none;
 }
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ .transparent{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     z-index: 10;
+     width: 100%;
+     height:100%;
+     opacity: 0.3;
+     z-index:9;
 }
