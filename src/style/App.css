@@ -3,11 +3,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+a {text-decoration: none;}
+
+.page-header{
   position: absolute;
   margin-left: 7.5%;
   width:90%;
   z-index: 5
+}
+
+.my-team-options{
+  width:100%;
 }
 
 h2, .drop-down-like{
@@ -19,8 +25,19 @@ h2, .drop-down-like{
 }
 
 h3{
+  color: rgb(155,157,156,100);
+  font-size: 13px;
+}
+
+h4{
   color: rgb(178,181,182,130);
   font-size: 11px;
+}
+
+p{
+  color: rgb(176,186,188,127);
+  font-size: 11px;
+  font-style: normal;
 }
 
 .panelContainer{
@@ -73,8 +90,8 @@ h1, .title-like{
   z-index: 1;
 }
 
-.list-names-wrapper {
-  margin-left: 1.5em;
+.my-team-wrapper {
+  margin-left: 2em;
   margin-top: 0.75em;
   color: rgb(141,163,171,70);
   font-size: 12px;
@@ -108,8 +125,7 @@ h1, .title-like{
   float:right;
  }
 
- .button-user-off {
-    background-color: white;
+ .button-user{
     font-size: 11px;
     color: rgb(182,198,200,124);
     padding-top:0.75em;
@@ -118,21 +134,24 @@ h1, .title-like{
     padding-right:2em;
     border: 1px solid rgb(231,232,234,147);
     display: inline-block;
-    border-radius: 3px 0px 0px 3px;
-    margin-left: 2em;
+ }
+
+ .button-user-left{
+  margin-left: 2em;
+  border-radius: 3px 0px 0px 3px;
+ }
+
+ .button-user-right{
+
+  border-radius: 0px 3px 3px 0px;
+   }
+
+ .button-user-off {
+    background-color: white;
 }
 
 .button-user-on {
    background-color: rgb(238,241,242,130);
-    font-size: 11px;
-    color: rgb(141,156,162,131);
-    padding-top:0.75em;
-    padding-bottom:0.75em;
-    padding-left: 2em;
-    padding-right:2em;
-    border: 1px solid rgb(231,232,234,147);
-    display: inline-block;
-    border-radius: 0px 3px 3px 0px;
 }
 
 .button-user-add {
@@ -147,6 +166,21 @@ h1, .title-like{
     display: inline-block;
     border-radius: 3px 3px 3px 3px;
     margin-left: 2em;
+}
+
+.button-user-create {
+   background-color: rgb(94,124,186,147);
+    font-size: 11px;
+    color: white;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left: 2em;
+    padding-right:2em;
+    border: 1px solid rgb(231,232,234,147);
+    display: inline-block;
+    border-radius: 3px 3px 3px 3px;
+    float:right;
+    margin-top:1em;
 }
 
 .menu-item-container{
@@ -167,6 +201,89 @@ h1, .title-like{
   font-size: 2.5em;
   color: rgb(139,144,148,138);
 }
+
+.list-users-wrapper{
+  width: 102%;
+  display:block;
+  margin-left:-2em;
+}
+
+.member-container{
+  width:21.3em;
+  display: inline-block;
+  margin-left: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(228,230,229,100);
+  margin-top:1em;
+  background-color: rgb(247,249,248,100);
+  text-align: center;
+}
+
+.button-content{
+  pointer-events: none;
+}
+
+.member-photo{
+  margin-left: 39%;
+  border-radius: 50%;
+}
+
+.create-user-container{
+  position: absolute;
+  height:100%;
+  width:47%;
+  background-color: rgb(250,250,250,160);
+  right: 0;  
+  top: 0;
+  z-index: 10;
+}
+
+.create-user-header{
+  width:100%;
+  height:7.5%;
+  background-color: white;
+  display:table
+}
+
+.create-user-title{
+  color: rgb(155,157,156,100);
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 1em
+
+}
+
+.create-user-form{
+  padding:1em;
+}
+
+.create-user-form-input-wrapper{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(222,223,225,131);
+  width:100%;
+  display: inline-block;
+}
+
+.create-user-form-input{
+  width:100%;
+  height:1em;
+  background: rgb(250,250,250,160);
+  border-style: none;
+ }
+
+.transparent{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  height:100%;
+  opacity: 0.3;
+  z-index:9;
+}
+
 
 .App {
   text-align: center;
