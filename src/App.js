@@ -75,6 +75,7 @@ class App extends Component {
               return item;
             })
           });
+          alert("Usuário "+name+" alterado.");
         } else {
           let member = {
             id: this.state.members.length + 1,
@@ -88,6 +89,8 @@ class App extends Component {
             members: this.state.members.concat(member),
             selectedMember: null
           });
+
+          alert("Usuário "+name+" adicionado.");
         }
         this.hideUserForm();
       } else {
